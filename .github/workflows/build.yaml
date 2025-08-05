@@ -23,6 +23,5 @@ jobs:
     
       - name: Build LSP
         run: |
-          cd scripts
-          chmod +x kotlin-lsp.sh
-          ./kotlin-lsp.sh
+          chmod +x ./scripts/kotlin-lsp.sh
+          ./scripts/kotlin-lsp.sh
