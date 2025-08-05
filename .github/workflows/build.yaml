@@ -31,7 +31,6 @@ jobs:
       
       - name: Build Bazel
         run: |
-          cd api.core
           bazel build //...
     
       - name: Build LSP
