@@ -32,7 +32,7 @@ jobs:
       
       - name: Build Bazel
         run: |
-          touch WORKSPACE
+          touch MODULE.bazel
           bazel build ...
     
       - name: Build LSP
