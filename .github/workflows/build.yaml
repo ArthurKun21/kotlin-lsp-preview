@@ -23,6 +23,6 @@ jobs:
     
       - name: Build LSP
         run: |
-          mkdir -p ./lib
+          mkdir lib
           chmod +x ./scripts/kotlin-lsp.sh
           ./scripts/kotlin-lsp.sh
