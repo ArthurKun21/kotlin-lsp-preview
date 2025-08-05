@@ -30,7 +30,9 @@ jobs:
           disk-cache: ${{ github.workflow }}
       
       - name: Build Bazel
+        working-directory: 'api.core'
         run: |
+          touch WORKSPACE
           bazel build //...
     
       - name: Build LSP
